@@ -29,7 +29,7 @@
   align-items: center;
   border-radius: 15px;
   transition: 700ms;
-  background: #fffbed;
+  background: #FDF7E4;
   box-shadow: 0 0 50px rgba(4, 4, 4, 0.06);
 }
 
@@ -111,7 +111,7 @@
 
 #card::before {
   content: "";
-  background: #eee8cb;
+  background: #dbd5bd;
   filter: blur(2rem);
   opacity: 30%;
   width: 100%;
