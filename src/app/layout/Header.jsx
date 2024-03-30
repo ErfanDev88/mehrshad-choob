@@ -41,7 +41,7 @@ function Header() {
             className={styles.link}
             href={"https://www.instagram.com/mehrshad_rezaee_912/"}
           >
-            پیج اینسنتاگرام
+            پیج اینستاگرام
           </Link>
         </span>
         <span>
