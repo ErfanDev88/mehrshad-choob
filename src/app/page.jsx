@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Btn from "./components/Btn";
+import ServicesCard from "./components/ServicesCard";
 
 export default function Home() {
   useEffect(function () {
@@ -27,7 +28,10 @@ export default function Home() {
         />
         <canvas id="stars" width="300" height="300"></canvas>
       </section>
-      cdscds
+      <section className={styles.services}>
+        <h1 className={styles.title}>خدمات کابینت سازی مهرشاد</h1>
+        <ServicesCard/>
+      </section>
     </main>
   );
 }
