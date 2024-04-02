@@ -10,14 +10,16 @@
 }
 .container {
   position: relative;
-  width: 350px;
-  height: 400px;
+  width: 370px;
+  height: 410px;
   transition: 200ms;
 }
 
 .container:active {
-  width: 180px;
-  height: 245px;
+  width: 400px;
+  height: 440px;
+  transform: scale(1.001);
+  margin-top: -20px;
 }
 
 #card {
@@ -367,7 +369,7 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: start;
-  row-gap: 30px;
+  row-gap: 20px;
 }
 
 #card .img {
@@ -376,7 +378,7 @@
 }
 #card h1 {
   font-weight: 700;
-  font-size: 35px;
+  font-size: 30px;
   padding-right: 25px;
 }
 #card p {

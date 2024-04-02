@@ -1,4 +1,5 @@
 import "./base/reset.scss";
+import ScrollToTop from "./components/ScrollToTop";
 import Header from "./layout/Header";
 import Navbar from "./layout/Navbar";
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
         <Header />
         <Navbar />
         {children}
+        <ScrollToTop />
       </body>
     </html>
   );

@@ -2,40 +2,47 @@
 import React, { useState } from "react";
 import "../base/card.css";
 import Image from "next/image";
-import firstServiceImage from "../../../public/assets/wood-black.jpg";
+import firstServiceImage from "../../../public/assets/firstServiceImage.jpg";
+import secondServiceImage from "../../../public/assets/secondServiceImage.jpg";
+import thirdServiceImage from "../../../public/assets/thirdServiceImage.jpg";
+import forthServiceImage from "../../../public/assets/forthServiceImage.jpg";
+import fifthServiceImage from "../../../public/assets/fifthServiceImage.jpg";
+import sixthServiceImage from "../../../public/assets/sixthServiceImage.jpg";
 
 function ServicesCard() {
   const [data, setData] = useState([
     {
       imageSrc: firstServiceImage,
-      title: "mdf",
-      description: "للللااا",
+      title: "ساخت انواع کمد دیواری",
+      description:
+        "  طراحی و ساخت کمد دیواری | قیمت کمد دیواری در تهران و کرج ",
     },
     {
-      imageSrc: firstServiceImage,
-      title: "mdf",
-      description: "للللااا",
+      imageSrc: secondServiceImage,
+      title: "کابینت ممبران",
+      description:
+        "کابینت آشپزخانه ممبران یکی از لوکس ترین و جذاب ترین انواع کابینت آشپزخانه به حساب",
     },
     {
-      imageSrc: firstServiceImage,
-      title: "mdf",
-      description: "للللااا",
+      imageSrc: thirdServiceImage,
+      title: "طراحی و ساخت انواع درب",
+      description: "  طراحی و ساخت درب | قیمت درب در تهران و کرج",
     },
     {
-      imageSrc: firstServiceImage,
-      title: "mdf",
-      description: "للللااا",
+      imageSrc: forthServiceImage,
+      title: "ساخت آینه کنسول",
+      description: "طراحی و ساخت انواع آینه کنسول با بهترین کیفیت",
     },
     {
-        imageSrc: firstServiceImage,
-        title: "mdf",
-        description: "للللااا",
-      },
-      {
-        imageSrc: firstServiceImage,
-        title: "mdf",
-        description: "للللااا",
-      },
+      imageSrc: fifthServiceImage,
+      title: "ساخت و تولید انواع پله",
+      description: "طراحی و تولید انواع پله شیک",
+    },
+    {
+      imageSrc: sixthServiceImage,
+      title: "کابینت ام دی اف",
+      description: "از جمله خدمات صنایع چوب مهرشاد در تهران و کرج ساخت انواع کابینت mdf است.از جمله موارد مهم",
+    },
   ]);
 
   return (
@@ -70,7 +77,7 @@ function ServicesCard() {
               <div class="tracker tr-24"></div>
               <div class="tracker tr-25"></div>
               <div id="card">
-                <Image src={d.imageSrc} width={100} height={200} class="img" />
+                <Image src={d.imageSrc} width={1000} height={230} class="img" />
                 <h1>{d.title}</h1>
                 <p>{d.description}</p>
               </div>

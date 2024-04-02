@@ -78,8 +78,8 @@ function Header() {
               stroke-miterlimit="10"
             />
           </svg>
-          <Link className={styles.link} href={"tel:+989215764431"}>
-            09215764431
+          <Link className={styles.link} href={"tel:+982177065076"}>
+            02177065076
           </Link>
         </span>
       </div>
