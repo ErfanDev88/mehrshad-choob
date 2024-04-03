@@ -281,20 +281,20 @@
 
     .location {
       width: 80%;
-      background-color: #7c765b74;
+      background-color: #dbd1a374;
       opacity: 0.8;
       background-image: repeating-radial-gradient(
           circle at 0 0,
           transparent 0,
           #cfba93d7 10px
         ),
-        repeating-linear-gradient(#e4d7acbc, #cbb795);
+        repeating-linear-gradient(#ebe0bcbc, #dfcaa6);
       border-radius: 40px;
       padding: 60px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      color: rgb(48, 42, 31);
+      color: #5d533d;
 
       div {
         width: 50%;
