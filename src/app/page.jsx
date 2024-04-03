@@ -10,8 +10,6 @@ import { context } from "./context/WorkSamplesContext";
 import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
-import NeshanMap from "@neshan-maps-platform/react-openlayers";
-import { Map } from "@neshan-maps-platform/ol";
 
 export default function Home() {
   useEffect(function () {
@@ -136,11 +134,6 @@ export default function Home() {
           />
         </div>
       </section>
-      <NeshanMap
-        mapKey="web.acbf69823bb4401e8668217f6fdb622a"
-        center={{ latitude: 35.7665394, longitude: 51.4749824 }}
-        zoom={14}
-      ></NeshanMap>
     </main>
   );
 }
