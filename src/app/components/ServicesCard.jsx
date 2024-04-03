@@ -77,9 +77,9 @@ function ServicesCard() {
               <div class="tracker tr-24"></div>
               <div class="tracker tr-25"></div>
               <div id="card">
-                <Image src={d.imageSrc} width={1000} height={230} class="img" />
-                <h1>{d.title}</h1>
-                <p>{d.description}</p>
+                <Image key={d.key} src={d.imageSrc} width={1000} height={230} class="img" />
+                <h1 key={d.key}>{d.title}</h1>
+                <p key={d.key}>{d.description}</p>
               </div>
             </div>
           </div>

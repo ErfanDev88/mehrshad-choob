@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@splinetool/runtime": "^1.0.91",
     "aos": "^3.0.0-beta.6",
     "dart-sass": "^1.25.0",
     "framer-motion": "^11.0.24",
