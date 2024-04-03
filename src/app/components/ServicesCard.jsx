@@ -12,36 +12,43 @@ import sixthServiceImage from "../../../public/assets/sixthServiceImage.jpg";
 function ServicesCard() {
   const [data, setData] = useState([
     {
+      id: 1,
       imageSrc: firstServiceImage,
       title: "ساخت انواع کمد دیواری",
       description:
         "  طراحی و ساخت کمد دیواری | قیمت کمد دیواری در تهران و کرج ",
     },
     {
+      id: 2,
       imageSrc: secondServiceImage,
       title: "کابینت ممبران",
       description:
         "کابینت آشپزخانه ممبران یکی از لوکس ترین و جذاب ترین انواع کابینت آشپزخانه به حساب",
     },
     {
+      id: 3,
       imageSrc: thirdServiceImage,
       title: "طراحی و ساخت انواع درب",
       description: "  طراحی و ساخت درب | قیمت درب در تهران و کرج",
     },
     {
+      id: 4,
       imageSrc: forthServiceImage,
       title: "ساخت آینه کنسول",
       description: "طراحی و ساخت انواع آینه کنسول با بهترین کیفیت",
     },
     {
+      id: 5,
       imageSrc: fifthServiceImage,
       title: "ساخت و تولید انواع پله",
       description: "طراحی و تولید انواع پله شیک",
     },
     {
+      id: 6,
       imageSrc: sixthServiceImage,
       title: "کابینت ام دی اف",
-      description: "از جمله خدمات صنایع چوب مهرشاد در تهران و کرج ساخت انواع کابینت mdf است.از جمله موارد مهم",
+      description:
+        "از جمله خدمات صنایع چوب مهرشاد در تهران و کرج ساخت انواع کابینت mdf است.از جمله موارد مهم",
     },
   ]);
 
@@ -49,7 +56,7 @@ function ServicesCard() {
     <div class="cardContainer">
       {data.map((d) => {
         return (
-          <div class="container" key={d.key}>
+          <div class="container" key={d.id}>
             <div class="canvas">
               <div class="tracker tr-1"></div>
               <div class="tracker tr-2"></div>
@@ -77,9 +84,9 @@ function ServicesCard() {
               <div class="tracker tr-24"></div>
               <div class="tracker tr-25"></div>
               <div id="card">
-                <Image key={d.key} src={d.imageSrc} width={1000} height={230} class="img" />
-                <h1 key={d.key}>{d.title}</h1>
-                <p key={d.key}>{d.description}</p>
+                <Image src={d.imageSrc} width={1000} height={230} class="img" />
+                <h1>{d.title}</h1>
+                <p>{d.description}</p>
               </div>
             </div>
           </div>
