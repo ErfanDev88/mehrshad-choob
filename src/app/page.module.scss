@@ -214,7 +214,7 @@
       justify-content: center;
       align-items: center;
       row-gap: 10px;
-      box-shadow: 5px 5px 30px #00000021 ,inset 0px 0px 30px #faeed187;
+      box-shadow: 5px 5px 30px #00000021, inset 0px 0px 30px #faeed187;
 
       span {
         font-size: 17px;
@@ -232,10 +232,10 @@
         color: #fff;
       }
       .link:hover {
-        color: #FDF7E4;
+        color: #fdf7e4;
       }
     }
-    .description{
+    .description {
       width: 60%;
       height: 100%;
       display: flex;
@@ -243,28 +243,78 @@
       justify-content: start;
       align-items: start;
       row-gap: 20px;
-      h1{
+      h1 {
         font-size: 35px;
         font-weight: 900;
       }
-      p{
+      p {
         width: 95%;
         font-size: 18px;
         font-weight: 400;
         line-height: 34px;
-        span{
+        span {
           display: block;
           padding-bottom: 15px;
         }
       }
-      .typeAnimation{
+      .typeAnimation {
         font-size: 40px;
-        color: #DED0B6;
+        color: #ded0b6;
         font-weight: 800;
         background: #bbab8c2b;
         border-radius: 10px;
         padding: 10px;
         backdrop-filter: blur(10px);
+      }
+    }
+  }
+
+  .locationContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 15rem;
+    padding-left: 15rem;
+    padding-top: 80px;
+
+    .location {
+      width: 80%;
+      background-color: #7c765b74;
+      opacity: 0.8;
+      background-image: repeating-radial-gradient(
+          circle at 0 0,
+          transparent 0,
+          #cfba93d7 10px
+        ),
+        repeating-linear-gradient(#e4d7acbc, #cbb795);
+      border-radius: 40px;
+      padding: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fff;
+
+      div {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+
+        h1 {
+          font-size: 30px;
+          font-weight: 700;
+          text-shadow: 0 0 1px #000000d8;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 400;
+          text-shadow: 0 0 1px #000000d8;
+          span {
+            font-weight: 900;
+          }
+        }
       }
     }
   }

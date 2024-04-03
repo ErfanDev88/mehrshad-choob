@@ -123,7 +123,7 @@ export default function Home() {
               1000, // wait 1s before replacing "Mice" with "Hamsters"
               "به همراه قیمت مناسب",
               1000,
-              "را از ما بخواهید",
+              " را از ما بخواهید!",
               1000,
             ]}
             wrapper="span"
@@ -132,6 +132,27 @@ export default function Home() {
             style={{ display: "inline-block" }}
             repeat={Infinity}
           />
+        </div>
+      </section>
+      <section className={styles.locationContainer}>
+        <div className={styles.location}>
+          <div>
+            <h1>ما کجاییم؟</h1>
+            <p>
+              <span>آدرس ما : </span>
+              تهران، میدان رسالت، خیابان هنگام، بالاتر از چهار راه استقلال، جنب
+              بستنی یاسر، پلاک ۶۲۷، واحد ۱، صنایع چوب مهرشاد
+            </p>
+          </div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340.3145640358666!2d51.51392478581358!3d35.759750336621785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e03c5b379e98b%3A0x505a0df6c0c39043!2z2LXZhtin24zYuSDahtmI2KjbjCDZhdmH2LHYtNin2K8!5e0!3m2!1sen!2suk!4v1712162441243!5m2!1sen!2suk"
+            width="500"
+            height="300"
+            style={{ border: 0, borderRadius: '20px'}}
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
       </section>
     </main>
