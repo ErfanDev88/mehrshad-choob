@@ -116,7 +116,7 @@ export default function Home() {
             هستید می توانید با ما تماس بگیرید و خدمات با کیفیت و قیمت مناسب
             کابینت ساز بهره مند شوید.
           </p>
-          <TypeAnimation
+          {/* <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
               "طراحی زیبا و منحصر به فرد",
@@ -131,7 +131,7 @@ export default function Home() {
             className={styles.typeAnimation}
             style={{ display: "inline-block" }}
             repeat={Infinity}
-          />
+          /> */}
         </div>
       </section>
     </main>
