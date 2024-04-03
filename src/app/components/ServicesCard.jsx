@@ -49,7 +49,7 @@ function ServicesCard() {
     <div class="cardContainer">
       {data.map((d) => {
         return (
-          <div class="container">
+          <div class="container" key={d.key}>
             <div class="canvas">
               <div class="tracker tr-1"></div>
               <div class="tracker tr-2"></div>
