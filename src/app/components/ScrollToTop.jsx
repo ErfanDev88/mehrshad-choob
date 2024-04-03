@@ -44,8 +44,8 @@ function ScrollToTop() {
         alignItems: "center",
         backgroundColor: "#BBAB8C",
         position: "fixed",
-        bottom: "7px",
-        right: "12px",
+        bottom: "13px",
+        right: "15px",
         borderRadius: "100%",
         cursor: "pointer",
       }}

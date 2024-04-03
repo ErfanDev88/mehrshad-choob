@@ -1,5 +1,6 @@
-import "./base/reset.scss";
+import "../../dist/main.css"
 import ScrollToTop from "./components/ScrollToTop";
+import WorkSamplesContext from "./context/WorkSamplesContext";
 import Header from "./layout/Header";
 import Navbar from "./layout/Navbar";
 
@@ -10,14 +11,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
-
   return (
     <html lang="en" dir="rtl">
       <body>
-        <Header />
-        <Navbar />
-        {children}
-        <ScrollToTop />
+        <WorkSamplesContext>
+          <Header />
+          <Navbar />
+          {children}
+          <ScrollToTop />
+        </WorkSamplesContext>
       </body>
     </html>
   );
