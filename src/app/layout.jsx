@@ -1,8 +1,9 @@
-import "../../dist/main.css"
+import "../../dist/main.css";
 import ScrollToTop from "./components/ScrollToTop";
 import WorkSamplesContext from "./context/WorkSamplesContext";
 import Header from "./layout/Header";
 import Navbar from "./layout/Navbar";
+import AnimCursor from "./components/AnimCursor";
 
 export const metadata = {
   title: "صنایع چوب مهرشاد | کابینت سازی مهرشاد",
@@ -15,6 +16,7 @@ export default function RootLayout({ children }) {
     <html lang="en" dir="rtl">
       <body>
         <WorkSamplesContext>
+          <AnimCursor />
           <Header />
           <Navbar />
           {children}
