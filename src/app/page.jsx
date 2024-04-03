@@ -137,7 +137,7 @@ export default function Home() {
         </div>
       </section>
       <NeshanMap
-        mapKey="YOUR_MAP_KEY"
+        mapKey="web.acbf69823bb4401e8668217f6fdb622a"
         center={{ latitude: 35.7665394, longitude: 51.4749824 }}
         zoom={14}
       ></NeshanMap>
