@@ -278,17 +278,18 @@
     padding-right: 15rem;
     padding-left: 15rem;
     padding-top: 80px;
-
+    padding-bottom: 100px;
+    background-color: #dbd1a374;
+    opacity: 0.8;
+    background-image: repeating-radial-gradient(
+        circle at 0 0,
+        transparent 0,
+        #cfba93d7 10px
+      ),
+      repeating-linear-gradient(#ebe0bcbc, #dfcaa6);
     .location {
       width: 80%;
-      background-color: #dbd1a374;
-      opacity: 0.8;
-      background-image: repeating-radial-gradient(
-          circle at 0 0,
-          transparent 0,
-          #cfba93d7 10px
-        ),
-        repeating-linear-gradient(#ebe0bcbc, #dfcaa6);
+      background: linear-gradient(to right, rgb(211, 188, 146), rgb(211, 189, 146));
       border-radius: 40px;
       padding: 60px;
       display: flex;
@@ -297,7 +298,7 @@
       color: #5d533d;
 
       div {
-        width: 50%;
+        width: 45%;
         display: flex;
         flex-direction: column;
         row-gap: 20px;

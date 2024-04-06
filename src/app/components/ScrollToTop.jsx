@@ -33,7 +33,6 @@ function ScrollToTop() {
 
   return (
     <motion.div
-      className="p-3 rounded-full bg-[#c7a754] fixed bottom-7 md:right-8 right-12 flex cursor-pointer"
       style={{
         opacity: 0,
         y: 20,
@@ -48,6 +47,7 @@ function ScrollToTop() {
         right: "15px",
         borderRadius: "100%",
         cursor: "pointer",
+        boxShadow: '0 0 10px #00000037'
       }}
       animate={controls}
       transition={{ duration: 0.3 }}

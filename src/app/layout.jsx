@@ -1,4 +1,4 @@
-import "../../dist/main.css";
+import "../../dist/main.css"
 import ScrollToTop from "./components/ScrollToTop";
 import WorkSamplesContext from "./context/WorkSamplesContext";
 import Header from "./layout/Header";
