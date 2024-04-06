@@ -9,30 +9,63 @@ export const context = createContext();
 function WorkSamplesContext({ children }) {
   const data = useState([
     {
-      id: 1,
-      imageSrc: doorWorkSample1,
-      title: "ساخت درب ساختمان",
+      cabinetMDF: [
+        {
+          id: 1,
+          imageSrc: closetWorkSample1,
+          title: "کمد دیواری ",
+        },
+      ],
     },
     {
-      id: 2,
-      imageSrc: closetWorkSample1,
-      title: "کمد دیواری ",
+      closet: [
+        {
+          id: 1,
+          imageSrc: cabinetMemberanWorkSample1,
+          title: "کمد",
+        },
+        {
+          id: 1,
+          imageSrc: cabinetMemberanWorkSample1,
+          title: "کمد",
+        },
+      ],
     },
     {
-      id: 3,
-      imageSrc: cabinetMemberanWorkSample1,
-      title: "کابینت ممبران آشپزخانه",
-    },
-
-    {
-      id: 4,
-      imageSrc: cabinetMemberanWorkSample1,
-      title: "کمد",
+      cabinetMemberan: [
+        {
+          id: 1,
+          imageSrc: cabinetMemberanWorkSample1,
+          title: "کابینت ممبران آشپزخانه",
+        },
+      ],
     },
     {
-      id: 5,
-      imageSrc: cabinetMemberanWorkSample1,
-      title: "کمد",
+      door: [
+        {
+          id: 1,
+          imageSrc: doorWorkSample1,
+          title: "ساخت درب ساختمان",
+        },
+      ],
+    },
+    {
+      mirror: [
+        {
+          id: 1,
+          imageSrc: doorWorkSample1,
+          title: "اینه",
+        },
+      ],
+    },
+    {
+      stair: [
+        {
+          id: 1,
+          imageSrc: doorWorkSample1,
+          title: "اینه",
+        },
+      ],
     },
   ]);
   return <context.Provider value={data}>{children}</context.Provider>;

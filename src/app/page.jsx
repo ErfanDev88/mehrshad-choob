@@ -18,7 +18,6 @@ export default function Home() {
   }, []);
 
   const data = useContext(context);
-  console.log(data);
   return (
     <main className={styles.container}>
       <section className={styles.hero} data-aos="zoom-in">
@@ -37,14 +36,98 @@ export default function Home() {
         />
         <canvas id="stars" width="300" height="300"></canvas>
       </section>
-      <section className={styles.services}>
+      <section className={styles.services} id="services">
         <h1 className={styles.title}>خدمات کابینت سازی مهرشاد</h1>
         <ServicesCard />
       </section>
       <section className={styles.workSamples}>
         <h1 className={styles.title}>نمونه کار های کابینت سازی مهرشاد</h1>
         <div class="cardContainer">
-          {data[0].slice(0, 3).map((d) => {
+          {data[0][0].cabinetMDF.slice(0, 1).map((d) => {
+            return (
+              <div class="container" style={{ height: "350px" }} key={d.id}>
+                <div class="canvas">
+                  <div class="tracker tr-1"></div>
+                  <div class="tracker tr-2"></div>
+                  <div class="tracker tr-3"></div>
+                  <div class="tracker tr-4"></div>
+                  <div class="tracker tr-5"></div>
+                  <div class="tracker tr-6"></div>
+                  <div class="tracker tr-7"></div>
+                  <div class="tracker tr-8"></div>
+                  <div class="tracker tr-9"></div>
+                  <div class="tracker tr-10"></div>
+                  <div class="tracker tr-11"></div>
+                  <div class="tracker tr-12"></div>
+                  <div class="tracker tr-13"></div>
+                  <div class="tracker tr-14"></div>
+                  <div class="tracker tr-15"></div>
+                  <div class="tracker tr-16"></div>
+                  <div class="tracker tr-17"></div>
+                  <div class="tracker tr-18"></div>
+                  <div class="tracker tr-19"></div>
+                  <div class="tracker tr-20"></div>
+                  <div class="tracker tr-21"></div>
+                  <div class="tracker tr-22"></div>
+                  <div class="tracker tr-23"></div>
+                  <div class="tracker tr-24"></div>
+                  <div class="tracker tr-25"></div>
+                  <div id="card">
+                    <Image
+                      src={d.imageSrc}
+                      width={1000}
+                      height={230}
+                      class="img"
+                    />
+                    <h1>{d.title}</h1>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+          {data[0][2].cabinetMemberan.slice(0, 1).map((d) => {
+            return (
+              <div class="container" style={{ height: "350px" }} key={d.id}>
+                <div class="canvas">
+                  <div class="tracker tr-1"></div>
+                  <div class="tracker tr-2"></div>
+                  <div class="tracker tr-3"></div>
+                  <div class="tracker tr-4"></div>
+                  <div class="tracker tr-5"></div>
+                  <div class="tracker tr-6"></div>
+                  <div class="tracker tr-7"></div>
+                  <div class="tracker tr-8"></div>
+                  <div class="tracker tr-9"></div>
+                  <div class="tracker tr-10"></div>
+                  <div class="tracker tr-11"></div>
+                  <div class="tracker tr-12"></div>
+                  <div class="tracker tr-13"></div>
+                  <div class="tracker tr-14"></div>
+                  <div class="tracker tr-15"></div>
+                  <div class="tracker tr-16"></div>
+                  <div class="tracker tr-17"></div>
+                  <div class="tracker tr-18"></div>
+                  <div class="tracker tr-19"></div>
+                  <div class="tracker tr-20"></div>
+                  <div class="tracker tr-21"></div>
+                  <div class="tracker tr-22"></div>
+                  <div class="tracker tr-23"></div>
+                  <div class="tracker tr-24"></div>
+                  <div class="tracker tr-25"></div>
+                  <div id="card">
+                    <Image
+                      src={d.imageSrc}
+                      width={1000}
+                      height={230}
+                      class="img"
+                    />
+                    <h1>{d.title}</h1>
+                  </div>
+                </div>
+              </div>
+            );
+          })}
+          {data[0][3].door.slice(0, 1).map((d) => {
             return (
               <div class="container" style={{ height: "350px" }} key={d.id}>
                 <div class="canvas">
@@ -87,6 +170,7 @@ export default function Home() {
             );
           })}
         </div>
+
         <div className={styles.btnContainer}>
           <Link href={"/work-samples"} className={styles.btn}>
             نمونه کار های بییشتر
@@ -149,14 +233,14 @@ export default function Home() {
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d340.3145640358666!2d51.51392478581358!3d35.759750336621785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e03c5b379e98b%3A0x505a0df6c0c39043!2z2LXZhtin24zYuSDahtmI2KjbjCDZhdmH2LHYtNin2K8!5e0!3m2!1sen!2suk!4v1712162441243!5m2!1sen!2suk"
             width="500"
             height="300"
-            style={{ border: 0, borderRadius: '20px'}}
+            style={{ border: 0, borderRadius: "20px" }}
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
       </section>
-      <Footer/>
+      <Footer />
     </main>
   );
 }

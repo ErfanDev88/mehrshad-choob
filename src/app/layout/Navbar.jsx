@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./_Navbar.module.scss";
 import Image from "next/image";
+import Link from 'next/link'
 import logo from "../../../public/assets/logo.png";
 
 function Navbar() {
@@ -14,10 +15,10 @@ function Navbar() {
         </div>
       </div>
       <ul className={styles.navigation} data-aos="fade-right">
-        <li>صفحه اصلی</li>
-        <li>نمونه کار ها</li>
-        <li>درباره ما</li>
-        <li>ارتباط با ما</li>
+        <Link className={styles.link} href={''}>صفحه اصلی</Link>
+        <Link className={styles.link} href={''}>نمونه کار ها</Link>
+        <Link className={styles.link} href={'#services'}>خدمات</Link>
+        <Link className={styles.link} href={''}>ارتباط با ما</Link>
       </ul>
     </nav>
   );
