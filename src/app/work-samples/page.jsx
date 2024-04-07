@@ -108,7 +108,6 @@ function page() {
                 </div>
               );
             })}
-            
           </div>
         </section>
         <section>

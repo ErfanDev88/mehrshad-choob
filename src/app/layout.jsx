@@ -1,4 +1,4 @@
-import "../../dist/main.css"
+import "../../dist/main.css";
 import ScrollToTop from "./components/ScrollToTop";
 import WorkSamplesContext from "./context/WorkSamplesContext";
 import Header from "./layout/Header";
@@ -8,7 +8,7 @@ import AnimCursor from "./components/AnimCursor";
 export const metadata = {
   title: "صنایع چوب مهرشاد | کابینت سازی مهرشاد",
   description:
-    "صنایع چوبی مهرشاد تولید کننده ی درب و دکوراسیون داخلی و سیستم آشپزخانه و غیره. کابینت آشپزخانه یکی از مهم ترین اجزای یک آشپزخانه است که هم به آن زیبایی می دهد و هم باعث ایجاد نظم می شود. برای اطلاع از قیمت مدل های جدید کابینت و راهنمایی برای انتخاب کابینت مناسب برای منزل خود با کابینت ساز تماس بگیرید.",
+    "صنایع چوب مهرشاد, تولید و ساخت انواع کابینت mdf و ممبران با بهترین کیفیت, کابینت سازی مهرشاد, بهترین قیمت کابینت سازی, کابینت, کابینت سازی",
 };
 
 export default function RootLayout({ children }) {

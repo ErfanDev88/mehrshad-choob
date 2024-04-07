@@ -1,3 +1,38 @@
+@use '../utils/MediaQueary.module' as *;
+
+.responsiveNav{
+  width: 100%;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: linear-gradient(to right, #e2c894, #d5b573);
+
+  @media #{$mobile} {
+    display: flex;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      h1 {
+        font-size: 22px;
+        font-weight: 800;
+      }
+    }
+  }
+}
+
 .navbar {
   width: 100%;
   padding-left: 15rem;
@@ -8,6 +43,9 @@
   justify-content: space-between;
   align-items: center;
   background: #fff;
+  @media #{$mobile} {
+    display: none;
+  }
 
   .title {
     display: flex;

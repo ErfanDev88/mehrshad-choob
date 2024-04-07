@@ -181,17 +181,17 @@ function Footer() {
             <h1>لینک های مفید</h1>
             <ul>
               <li>
-                <Link className={styles.link} href={""}>
-                  درباره ما
+                <Link className={styles.link} href={"#services"}>
+                  خدمات
                 </Link>
               </li>
               <li>
-                <Link className={styles.link} href={""}>
+                <Link className={styles.link} href={"/contact-us"}>
                   ارتباط با ما
                 </Link>
               </li>
               <li>
-                <Link className={styles.link} href={""}>
+                <Link className={styles.link} href={"/worksamples"}>
                   نمونه کار ها
                 </Link>
               </li>

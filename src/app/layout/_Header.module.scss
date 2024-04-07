@@ -1,3 +1,5 @@
+@use '../utils/MediaQueary.module' as *;
+
 .header {
   width: 100%;
   background: #26231c;
@@ -9,6 +11,9 @@
   justify-content: space-between;
   align-items: center;
   
+  @media #{$mobile} {
+    display: none;
+  }
   h1{
     font-size: 18px;
     color: #fff;
