@@ -1,4 +1,4 @@
-@use './utils/MediaQueary.module' as *;
+@use "./utils/MediaQueary.module" as *;
 
 .container {
   display: flex;
@@ -23,6 +23,12 @@
     padding-top: 10rem;
     row-gap: 20px;
     position: relative;
+    @media #{$mobile} {
+      height: 100%;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 4rem;
+    }
 
     h1 {
       position: relative;
@@ -34,6 +40,9 @@
       -webkit-background-clip: text;
       background-clip: text;
       -webkit-text-fill-color: transparent;
+      @media #{$mobile} {
+        font-size: 70px;
+      }
 
       &::before {
         content: attr(data-text);
@@ -49,6 +58,10 @@
       font-size: 25px;
       font-weight: 500;
       text-shadow: 1px 1.5px 2px #000;
+      @media #{$mobile} {
+        font-size: 18px;
+        text-align: center;
+      }
     }
   }
 
@@ -82,11 +95,19 @@
     );
     background-size: 6px 6px;
     background-color: #fdf7e4;
+    @media #{$mobile} {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      align-items: center;
+    }
 
     .title {
       font-size: 40px;
       color: rgb(39, 39, 39);
       font-weight: 800;
+      @media #{$mobile} {
+        font-size: 35px;
+      }
     }
   }
 
@@ -120,10 +141,19 @@
     );
     background-size: 6px 6px;
     background-color: #fdf7e4;
+    @media #{$mobile} {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      align-items: center;
+    }
+
     .title {
       font-size: 40px;
       color: rgb(39, 39, 39);
       font-weight: 800;
+      @media #{$mobile} {
+        font-size: 35px;
+      }
     }
     .btn {
       display: inline-block;
@@ -204,6 +234,12 @@
     background-repeat: no-repeat;
     background-size: cover;
     color: #fff;
+    @media #{$mobile} {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      flex-direction: column;
+      background-image: url("../../public/assets/bannerBGMobile.jpg");
+    }
 
     .contact {
       padding: 30px;
@@ -291,7 +327,11 @@
       repeating-linear-gradient(#ebe0bcbc, #dfcaa6);
     .location {
       width: 80%;
-      background: linear-gradient(to right, rgb(211, 188, 146), rgb(211, 189, 146));
+      background: linear-gradient(
+        to right,
+        rgb(211, 188, 146),
+        rgb(211, 189, 146)
+      );
       border-radius: 40px;
       padding: 60px;
       display: flex;
