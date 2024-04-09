@@ -68,7 +68,7 @@ function WorkSamplesContext({ children }) {
       ],
     },
   ]);
-  return <context.Provider value={data}>{children}</context.Provider>;
+  return <WorkContext.Provider value={data}>{children}</WorkContext.Provider>;
 }
 
 export default WorkSamplesContext;
