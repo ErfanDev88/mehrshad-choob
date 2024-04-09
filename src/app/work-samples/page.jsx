@@ -1,17 +1,15 @@
 "use client";
 import React, { useContext, useEffect, useState } from "react";
-import styles from "./page.module.scss";
+import styles from "./_page.module.scss";
 import AOS from "aos";
 import "../base/card.css";
-import { context } from "../context/WorkSamplesContext";
+import { WorkContext } from "../context/WorkSamplesContext";
 import Image from "next/image";
 import Footer from "../layout/Footer";
 
 function WorkSamples() {
-  useEffect(function () {
-    AOS.init({ duration: 900 });
-  }, []);
-  const data = useContext(context);
+
+  const data = useContext(WorkContext);
   return (
     <>
       <main className={styles.container}>

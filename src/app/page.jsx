@@ -6,7 +6,7 @@ import { useContext, useEffect } from "react";
 import Btn from "./components/Btn";
 import ServicesCard from "./components/ServicesCard";
 import "./base/card.css";
-import { context } from "./context/WorkSamplesContext";
+import { WorkContext } from "./context/WorkSamplesContext";
 import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
@@ -17,7 +17,7 @@ export default function Home() {
     AOS.init({ duration: 900 });
   }, []);
 
-  const data = useContext(context);
+  const data = useContext(WorkContext);
   return (
     <main className={styles.container}>
       <section className={styles.hero} data-aos="zoom-in">

@@ -4,7 +4,7 @@ import doorWorkSample1 from "../../../public/assets/doorWorkSample1.jpg";
 import closetWorkSample1 from "../../../public/assets/closetWorkSample1.jpg";
 import cabinetMemberanWorkSample1 from "../../../public/assets/cabinetMemberanWorkSample1.jpg";
 
-export const context = createContext();
+export const WorkContext = createContext();
 
 function WorkSamplesContext({ children }) {
   const data = useState([
