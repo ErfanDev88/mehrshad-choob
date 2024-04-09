@@ -46,7 +46,7 @@ function Navbar() {
           <Link className={styles.link} href={"/work-samples"}>
             نمونه کار ها
           </Link>
-          <Link className={styles.link} href={"#services"}>
+          <Link className={styles.link} href={"/#services"}>
             خدمات
           </Link>
           <Link className={styles.link} href={"/contact-us"}>

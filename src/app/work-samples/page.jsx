@@ -7,7 +7,7 @@ import { context } from "../context/WorkSamplesContext";
 import Image from "next/image";
 import Footer from "../layout/Footer";
 
-function page() {
+function WorkSamples() {
   useEffect(function () {
     AOS.init({ duration: 900 });
   }, []);
@@ -304,4 +304,4 @@ function page() {
   );
 }
 
-export default page;
+export default WorkSamples;
