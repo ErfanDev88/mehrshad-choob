@@ -237,6 +237,7 @@ export default function Home() {
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            className={styles.locationMap}
           ></iframe>
         </div>
       </section>

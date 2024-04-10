@@ -181,7 +181,7 @@ function Footer() {
             <h1>لینک های مفید</h1>
             <ul>
               <li>
-                <Link className={styles.link} href={"#services"}>
+                <Link className={styles.link} href={"/#services"}>
                   خدمات
                 </Link>
               </li>

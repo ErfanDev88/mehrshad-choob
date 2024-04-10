@@ -1,6 +1,7 @@
 'use client'
 import React, { useEffect, useState } from "react";
 import { motion, useAnimation } from "framer-motion";
+import styles from './_Btn.module.scss'
 
 function ScrollToTop() {
   const [showButton, setShowButton] = useState(false);
@@ -35,7 +36,6 @@ function ScrollToTop() {
     <motion.div
       style={{
         opacity: 0,
-        y: 20,
         width: "40px",
         height: "40px",
         display: "flex",
@@ -47,8 +47,10 @@ function ScrollToTop() {
         right: "15px",
         borderRadius: "100%",
         cursor: "pointer",
-        boxShadow: '0 0 10px #00000037'
+        boxShadow: '0 0 10px #00000037',
+        zIndex: 1000
       }}
+      className={styles.scrolltoUp}
       animate={controls}
       transition={{ duration: 0.3 }}
       onClick={scrollToTop}
