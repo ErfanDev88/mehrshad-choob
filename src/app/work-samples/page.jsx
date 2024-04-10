@@ -7,9 +7,9 @@ import { WorkContext } from "../context/WorkSamplesContext";
 import Image from "next/image";
 import Footer from "../layout/Footer";
 
-function WorkSamples() {
+function WorkSamplesPage() {
 
-  const data = useContext(WorkContext);
+  const workSamplesData = useContext(WorkContext);
   return (
     <>
       <main className={styles.container}>
@@ -17,7 +17,7 @@ function WorkSamples() {
         <section>
           <h1>کابینت ام دی اف</h1>
           <div class="cardContainer">
-            {data[0][0].cabinetMDF.map((d) => {
+            {workSamplesData[0][0].cabinetMDF.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
                   <div class="canvas">
@@ -64,7 +64,7 @@ function WorkSamples() {
         <section>
           <h1>کمد دیواری</h1>
           <div class="cardContainer">
-            {data[0][1].closet.map((d) => {
+            {workSamplesData[0][1].closet.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
                   <div class="canvas">
@@ -111,7 +111,7 @@ function WorkSamples() {
         <section>
           <h1>کابینت ممبران آشپزخانه</h1>
           <div class="cardContainer">
-            {data[0][2].cabinetMemberan.map((d) => {
+            {workSamplesData[0][2].cabinetMemberan.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
                   <div class="canvas">
@@ -158,7 +158,7 @@ function WorkSamples() {
         <section>
           <h1>ساخت انواع درب ساختمان</h1>
           <div class="cardContainer">
-            {data[0][3].door.map((d) => {
+            {workSamplesData[0][3].door.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
                   <div class="canvas">
@@ -205,7 +205,7 @@ function WorkSamples() {
         <section>
           <h1>ساخت انواع آینه کنسول</h1>
           <div class="cardContainer">
-            {data[0][4].mirror.map((d) => {
+            {workSamplesData[0][4].mirror.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
                   <div class="canvas">
@@ -252,7 +252,7 @@ function WorkSamples() {
         <section className={styles.stair}>
           <h1>طراحی انواع پله</h1>
           <div class="cardContainer">
-            {data[0][5].stair.map((d) => {
+            {workSamplesData[0][5].stair.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
                   <div class="canvas">
@@ -302,4 +302,4 @@ function WorkSamples() {
   );
 }
 
-export default WorkSamples;
+export default WorkSamplesPage;

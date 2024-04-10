@@ -7,7 +7,7 @@ import Footer from "../layout/Footer";
 import Link from "next/link";
 import contactUsIMG from '../../../public/assets/contactUsIMG.jpg'
 
-function ContactUs() {
+function ContactUsPage() {
   return (
     <main className={styles.contact}>
       <h1 className={styles.title}>ارتباط با ما </h1>
@@ -93,4 +93,4 @@ function ContactUs() {
   );
 }
 
-export default ContactUs;
+export default ContactUsPage;
