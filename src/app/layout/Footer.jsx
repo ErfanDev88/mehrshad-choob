@@ -13,7 +13,14 @@ function Footer() {
             style={{ height: "500px", width: "100%" }}
           />
         </div>
-
+        <div className={styles.swatch}>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
         <div className={styles.description}>
           <div className={styles.about}>
             <h1>درباره ما</h1>
@@ -200,9 +207,15 @@ function Footer() {
         </div>
       </footer>
       <div className={styles.developer}>
-          <h1> طراح سایت : 
-            <Link className={styles.link} href={'https://erfandev.vercel.app/'}> محمد عرفان رضایی</Link>
-          </h1>
+        <h1>
+         
+            طراح سایت  :   
+          <Link className={styles.link} href={"https://erfandev.vercel.app/"}>
+              
+            محمد عرفان رضایی
+  
+          </Link>
+        </h1>
       </div>
     </>
   );
