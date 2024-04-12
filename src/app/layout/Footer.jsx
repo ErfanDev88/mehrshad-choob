@@ -26,7 +26,7 @@ function Footer() {
             <h1>درباره ما</h1>
             <p>طراح،سازنده و نصب انواع کابینت در تهران و کرج</p>
             <div>
-              <Link className={styles.link} href={""}>
+              <Link className={styles.link} href={"tel:+989125788319"}>
                 <svg
                   width="24"
                   height="24"
@@ -42,7 +42,7 @@ function Footer() {
                   />
                 </svg>
               </Link>
-              <Link className={styles.link} href={""}>
+              <Link className={styles.link} href={"https://wa.me/+989125788319"}>
                 <svg
                   width="24"
                   height="24"
@@ -66,7 +66,7 @@ function Footer() {
                   />
                 </svg>
               </Link>
-              <Link className={styles.link} href={""}>
+              <Link className={styles.link} href={"https://www.instagram.com/mehrshad_rezaee_912/"}>
                 <svg
                   width="24"
                   height="24"
