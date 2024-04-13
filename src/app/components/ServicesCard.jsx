@@ -57,7 +57,7 @@ function ServicesCard() {
       {data.map((d) => {
         return (
           <div class="container" key={d.id}>
-            <div class="canvas" data-aos="flip-down">
+            <div class="canvas">
               <div class="tracker tr-1"></div>
               <div class="tracker tr-2"></div>
               <div class="tracker tr-3"></div>

@@ -25,7 +25,7 @@ function Navbar() {
   return (
     <>
       <div className={styles.responsiveNav}>
-        <div className={styles.title} data-aos="fade-left">
+        <div className={styles.title}>
           <Image alt="صنایع چوب مهرشاد" src={logo} width={60} />
           <div>
             <h1>صنایع چوب مهرشاد</h1>
@@ -46,14 +46,14 @@ function Navbar() {
         </button>
       </div>
       <nav className={styles.navbar}>
-        <div className={styles.title} data-aos="fade-left">
+        <div className={styles.title}>
           <Image alt="صنایع چوب مهرشاد" src={logo} width={80} />
           <div>
             <h1>صنایع چوب مهرشاد</h1>
             <span>ساخت کابینت در تهران و کرج</span>
           </div>
         </div>
-        <ul className={styles.navigation} data-aos="fade-right">
+        <ul className={styles.navigation}>
           <Link className={styles.link} href={"/"}>
             صفحه اصلی
           </Link>

@@ -21,7 +21,7 @@ export default function Home() {
   const data = useContext(WorkContext);
   return (
     <main className={styles.container}>
-      <section className={styles.hero} data-aos="zoom-in">
+      <section className={styles.hero}>
         <h1 data-text="صنایع چوب مهرشاد">صنایع چوب مهرشاد</h1>
         <p>
           <b>
@@ -49,7 +49,6 @@ export default function Home() {
           {data[0][0].cabinetMDF.slice(0, 1).map((d) => {
             return (
               <div
-                data-aos="flip-down"
                 class="container"
                 style={{ height: "350px" }}
                 key={d.id}
@@ -97,7 +96,6 @@ export default function Home() {
           {data[0][2].cabinetMemberan.slice(0, 1).map((d) => {
             return (
               <div
-                data-aos="flip-down"
                 class="container"
                 style={{ height: "350px" }}
                 key={d.id}
@@ -145,7 +143,6 @@ export default function Home() {
           {data[0][3].door.slice(0, 1).map((d) => {
             return (
               <div
-                data-aos="flip-down"
                 class="container"
                 style={{ height: "350px" }}
                 key={d.id}
@@ -199,14 +196,14 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.banner}>
-        <div className={styles.contact} data-aos="fade-left">
+        <div className={styles.contact}>
           <span>میخوای با هم صحبت کنیم؟</span>
           <h1>همین الان با ما تماس بگیر</h1>
           <Link className={styles.link} href={"tel:+989125788319"}>
             *09125788319*
           </Link>
         </div>
-        <div className={styles.description} data-aos="fade-right">
+        <div className={styles.description}>
           <h1>کابینت سازی مهرشاد در تهران</h1>
           <p>
             <strong>
@@ -243,7 +240,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.locationContainer}>
-        <div className={styles.location} data-aos="zoom-in">
+        <div className={styles.location}>
           <div>
             <h1>ما کجاییم؟</h1>
             <p>

@@ -22,7 +22,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][0].cabinetMDF.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas" data-aos="flip-down">
+                  <div class="canvas">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>
@@ -70,7 +70,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][1].closet.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas" data-aos="flip-down">
+                  <div class="canvas">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>
@@ -118,7 +118,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][2].cabinetMemberan.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas" data-aos="flip-down">
+                  <div class="canvas" >
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>
@@ -166,7 +166,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][3].door.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas" data-aos="flip-down">
+                  <div class="canvas">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>
@@ -214,7 +214,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][4].mirror.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas" data-aos="flip-down">
+                  <div class="canvas" >
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>
@@ -262,7 +262,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][5].stair.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas" data-aos="flip-down">
+                  <div class="canvas">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className={styles.header} data-aos="fade-down">
+    <header className={styles.header}>
       <h1>کابینت سازی مهرشاد</h1>
       <div className={styles.information}>
         <span>

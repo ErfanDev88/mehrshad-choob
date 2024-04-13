@@ -13,7 +13,7 @@ function ContactUsPage() {
     AOS.init({ duration: 900 });
   }, []);
   return (
-    <main className={styles.contact} data-aos="zoom-in">
+    <main className={styles.contact}>
       <h1 className={styles.title}>ارتباط با ما </h1>
       <section>
         <div>
