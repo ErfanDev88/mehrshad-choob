@@ -1,15 +1,19 @@
 "use client";
-import React from "react";
+import React, { useEffect } from "react";
 import styles from "./_page.module.scss";
 import Image from "next/image";
 import "../base/contactCard.css";
 import Footer from "../layout/Footer";
 import Link from "next/link";
 import contactUsIMG from '../../../public/assets/contactUsIMG.jpg'
+import AOS from 'aos'
 
 function ContactUsPage() {
+  useEffect(function () {
+    AOS.init({ duration: 900 });
+  }, []);
   return (
-    <main className={styles.contact}>
+    <main className={styles.contact} data-aos="zoom-in">
       <h1 className={styles.title}>ارتباط با ما </h1>
       <section>
         <div>
@@ -85,7 +89,7 @@ function ContactUsPage() {
           </div>
         </div>
         <div>
-          <Image src={contactUsIMG} width={700} className={styles.image} />
+          <Image alt="ارتباط با ما" src={contactUsIMG} width={600} className={styles.image} />
         </div>
       </section>
       <Footer />

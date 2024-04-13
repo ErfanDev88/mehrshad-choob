@@ -1,14 +1,16 @@
 "use client";
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useEffect } from "react";
 import styles from "./_page.module.scss";
-import AOS from "aos";
 import "../base/card.css";
 import { WorkContext } from "../context/WorkSamplesContext";
 import Image from "next/image";
 import Footer from "../layout/Footer";
+import AOS from 'aos'
 
 function WorkSamplesPage() {
-
+  useEffect(function () {
+    AOS.init({ duration: 900 });
+  }, []);
   const workSamplesData = useContext(WorkContext);
   return (
     <>
@@ -20,7 +22,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][0].cabinetMDF.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas">
+                  <div class="canvas" data-aos="flip-down">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>
@@ -52,6 +54,7 @@ function WorkSamplesPage() {
                         width={1000}
                         height={230}
                         class="img"
+                        alt={d.title}
                       />
                       <h1>{d.title}</h1>
                     </div>
@@ -67,7 +70,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][1].closet.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas">
+                  <div class="canvas" data-aos="flip-down">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>
@@ -98,6 +101,7 @@ function WorkSamplesPage() {
                         src={d.imageSrc}
                         width={1000}
                         height={230}
+                        alt={d.title}
                         class="img"
                       />
                       <h1>{d.title}</h1>
@@ -114,7 +118,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][2].cabinetMemberan.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas">
+                  <div class="canvas" data-aos="flip-down">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>
@@ -145,6 +149,7 @@ function WorkSamplesPage() {
                         src={d.imageSrc}
                         width={1000}
                         height={230}
+                        alt={d.title}
                         class="img"
                       />
                       <h1>{d.title}</h1>
@@ -161,7 +166,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][3].door.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas">
+                  <div class="canvas" data-aos="flip-down">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>
@@ -192,6 +197,7 @@ function WorkSamplesPage() {
                         src={d.imageSrc}
                         width={1000}
                         height={230}
+                        alt={d.title}
                         class="img"
                       />
                       <h1>{d.title}</h1>
@@ -208,7 +214,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][4].mirror.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas">
+                  <div class="canvas" data-aos="flip-down">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>
@@ -239,6 +245,7 @@ function WorkSamplesPage() {
                         src={d.imageSrc}
                         width={1000}
                         height={230}
+                        alt={d.title}
                         class="img"
                       />
                       <h1>{d.title}</h1>
@@ -255,7 +262,7 @@ function WorkSamplesPage() {
             {workSamplesData[0][5].stair.map((d) => {
               return (
                 <div class="container" style={{ height: "350px" }} key={d.id}>
-                  <div class="canvas">
+                  <div class="canvas" data-aos="flip-down">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
                     <div class="tracker tr-3"></div>
@@ -286,6 +293,7 @@ function WorkSamplesPage() {
                         src={d.imageSrc}
                         width={1000}
                         height={230}
+                        alt={d.title}
                         class="img"
                       />
                       <h1>{d.title}</h1>

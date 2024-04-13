@@ -1,4 +1,4 @@
-@use '../utils/MediaQueary.module' as *;
+@use "../utils/MediaQueary.module" as *;
 
 .header {
   width: 100%;
@@ -10,37 +10,43 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
+
   @media #{$mobile} {
     display: none;
   }
-  h1{
+
+  @media #{$tablet} {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  h1 {
     font-size: 18px;
     color: #fff;
     font-weight: 200;
   }
 
-  .information{
+  .information {
     display: flex;
     justify-content: space-between;
     align-items: center;
     column-gap: 23px;
 
-    span{
+    span {
       display: flex;
       justify-content: space-between;
       align-items: center;
       column-gap: 8px;
 
-      h3{
+      h3 {
         color: #fff;
         font-size: 15px;
-        font-weight:200;
+        font-weight: 200;
       }
-      .link{
+      .link {
         color: #fff;
         font-size: 15px;
-        font-weight:200;
+        font-weight: 200;
         text-decoration: none;
       }
     }

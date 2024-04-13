@@ -1,6 +1,6 @@
-@use '../utils/MediaQueary.module' as *;
+@use "../utils/MediaQueary.module" as *;
 
-.responsiveNav{
+.responsiveNav {
   width: 100%;
   display: none;
   justify-content: space-between;
@@ -45,6 +45,10 @@
   background: #fff;
   @media #{$mobile} {
     display: none;
+  }
+  @media #{$tablet} {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .title {

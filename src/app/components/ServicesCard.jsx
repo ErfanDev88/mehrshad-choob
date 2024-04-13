@@ -57,7 +57,7 @@ function ServicesCard() {
       {data.map((d) => {
         return (
           <div class="container" key={d.id}>
-            <div class="canvas">
+            <div class="canvas" data-aos="flip-down">
               <div class="tracker tr-1"></div>
               <div class="tracker tr-2"></div>
               <div class="tracker tr-3"></div>
@@ -84,7 +84,7 @@ function ServicesCard() {
               <div class="tracker tr-24"></div>
               <div class="tracker tr-25"></div>
               <div id="card">
-                <Image src={d.imageSrc} width={1000} height={230} class="img" />
+                <Image alt={d.title} src={d.imageSrc} width={1000} height={230} class="img" />
                 <h1>{d.title}</h1>
                 <p>{d.description}</p>
               </div>

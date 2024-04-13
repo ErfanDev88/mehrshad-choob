@@ -11,6 +11,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { TypeAnimation } from "react-type-animation";
 import Footer from "./layout/Footer";
+import Head from "next/head";
 
 export default function Home() {
   useEffect(function () {
@@ -23,8 +24,10 @@ export default function Home() {
       <section className={styles.hero} data-aos="zoom-in">
         <h1 data-text="صنایع چوب مهرشاد">صنایع چوب مهرشاد</h1>
         <p>
-          ساخت و نصب انواع کابینت, درب و دکوراسیون داخلی و سیستم آشپزخانه با
-          بهترین کیفیت
+          <b>
+            ساخت و نصب انواع کابینت, درب و دکوراسیون داخلی و سیستم آشپزخانه با
+            بهترین کیفیت
+          </b>
         </p>
         <p>برای مشاوره و سفارش همین حالا با ما تماس بگیرید!</p>
         <Btn
@@ -45,7 +48,12 @@ export default function Home() {
         <div class="cardContainer">
           {data[0][0].cabinetMDF.slice(0, 1).map((d) => {
             return (
-              <div class="container" style={{ height: "350px" }} key={d.id}>
+              <div
+                data-aos="flip-down"
+                class="container"
+                style={{ height: "350px" }}
+                key={d.id}
+              >
                 <div class="canvas">
                   <div class="tracker tr-1"></div>
                   <div class="tracker tr-2"></div>
@@ -78,6 +86,7 @@ export default function Home() {
                       width={1000}
                       height={230}
                       class="img"
+                      alt={d.title}
                     />
                     <h1>{d.title}</h1>
                   </div>
@@ -87,7 +96,12 @@ export default function Home() {
           })}
           {data[0][2].cabinetMemberan.slice(0, 1).map((d) => {
             return (
-              <div class="container" style={{ height: "350px" }} key={d.id}>
+              <div
+                data-aos="flip-down"
+                class="container"
+                style={{ height: "350px" }}
+                key={d.id}
+              >
                 <div class="canvas">
                   <div class="tracker tr-1"></div>
                   <div class="tracker tr-2"></div>
@@ -120,6 +134,7 @@ export default function Home() {
                       width={1000}
                       height={230}
                       class="img"
+                      alt={d.title}
                     />
                     <h1>{d.title}</h1>
                   </div>
@@ -129,7 +144,12 @@ export default function Home() {
           })}
           {data[0][3].door.slice(0, 1).map((d) => {
             return (
-              <div class="container" style={{ height: "350px" }} key={d.id}>
+              <div
+                data-aos="flip-down"
+                class="container"
+                style={{ height: "350px" }}
+                key={d.id}
+              >
                 <div class="canvas">
                   <div class="tracker tr-1"></div>
                   <div class="tracker tr-2"></div>
@@ -161,6 +181,7 @@ export default function Home() {
                       src={d.imageSrc}
                       width={1000}
                       height={230}
+                      alt={d.title}
                       class="img"
                     />
                     <h1>{d.title}</h1>
@@ -172,34 +193,36 @@ export default function Home() {
         </div>
 
         <div className={styles.btnContainer}>
-          <Link href={"/work-samples"} className={styles.btn}>
+          <Link title="نمونه کار های بییشتر" href={"/work-samples"} className={styles.btn}>
             نمونه کار های بییشتر
           </Link>
         </div>
       </section>
       <section className={styles.banner}>
-        <div className={styles.contact}>
+        <div className={styles.contact} data-aos="fade-left">
           <span>میخوای با هم صحبت کنیم؟</span>
           <h1>همین الان با ما تماس بگیر</h1>
           <Link className={styles.link} href={"tel:+989125788319"}>
             *09125788319*
           </Link>
         </div>
-        <div className={styles.description}>
+        <div className={styles.description} data-aos="fade-right">
           <h1>کابینت سازی مهرشاد در تهران</h1>
           <p>
-            ساخت کابینت در سبک و طرح های مختلفی انجام می شود برای ساخت کابینت
-            آشپزخانه خود حتما به کابینت ساز حرفه ای و مطمئن مراجعه کنید زیرا که
-            اکثر کابینت سازها از جنس های مرغوب ورق و چسب و یراق الات استفاده
-            نمی‌کنند و باعث فرسودگی سریع کابینت ها می شود.
-            <span></span>
-            بدون شک در هر صنف (مانند صنف کابینت سازی ) افرادی وجود دارند که کار
-            را به بهترین شکل ممکن انجام می دهند و در نهایت نتیجه ی کار بسیار
-            حرفه ای به شما تحویل میدهند. برای پیدا کردن بهترین کابینت ساز در
-            تهران و کرج باید از افراد متخصص که در کارگاه کابینت سازی تهران
-            مشغولند، کمک بگیرید تا به نتیجه ی مطلوب برسید. اگر ساکن تهران و کرج
-            هستید می توانید با ما تماس بگیرید و خدمات با کیفیت و قیمت مناسب
-            کابینت ساز بهره مند شوید.
+            <strong>
+              ساخت کابینت در سبک و طرح های مختلفی انجام می شود برای ساخت کابینت
+              آشپزخانه خود حتما به کابینت ساز حرفه ای و مطمئن مراجعه کنید زیرا
+              که اکثر کابینت سازها از جنس های مرغوب ورق و چسب و یراق الات
+              استفاده نمی‌کنند و باعث فرسودگی سریع کابینت ها می شود.
+              <span></span>
+              بدون شک در هر صنف (مانند صنف کابینت سازی ) افرادی وجود دارند که
+              کار را به بهترین شکل ممکن انجام می دهند و در نهایت نتیجه ی کار
+              بسیار حرفه ای به شما تحویل میدهند. برای پیدا کردن بهترین کابینت
+              ساز در تهران و کرج باید از افراد متخصص که در کارگاه کابینت سازی
+              تهران مشغولند، کمک بگیرید تا به نتیجه ی مطلوب برسید. اگر ساکن
+              تهران و کرج هستید می توانید با ما تماس بگیرید و خدمات با کیفیت و
+              قیمت مناسب کابینت ساز بهره مند شوید.
+            </strong>
           </p>
           <TypeAnimation
             sequence={[
@@ -220,7 +243,7 @@ export default function Home() {
         </div>
       </section>
       <section className={styles.locationContainer}>
-        <div className={styles.location}>
+        <div className={styles.location} data-aos="zoom-in">
           <div>
             <h1>ما کجاییم؟</h1>
             <p>

@@ -22,9 +22,17 @@
     align-items: center;
     padding-top: 2rem;
   }
+  @media #{$tablet} {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+  }
 
   .robot {
     @media #{$mobile} {
+      display: none;
+    }
+    @media #{$tablet} {
       display: none;
     }
     width: 30%;
@@ -36,6 +44,9 @@
     text-align: center;
     position: relative;
     @media #{$mobile} {
+      display: flex;
+    }
+    @media #{$tablet} {
       display: flex;
     }
   }
@@ -54,6 +65,10 @@
     display: inline-block;
     backface-visibility: hidden;
     transform: rotate(0deg);
+    @media #{$tablet} {
+      width: 40px;
+      height: 130px;
+    }
   }
   .swatch div:before {
     width: 16px;
@@ -181,6 +196,9 @@
       align-items: flex-start;
       padding-right: 2rem;
       row-gap: 20px;
+    }
+    @media #{$tablet} {
+      width: 83%;
     }
 
     .about {

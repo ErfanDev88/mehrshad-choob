@@ -30,6 +30,11 @@
       padding-top: 4rem;
     }
 
+    @media #{$tablet} {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
     h1 {
       position: relative;
       font-size: 9em;
@@ -100,6 +105,10 @@
       padding-right: 2rem;
       align-items: center;
     }
+    @media #{$tablet} {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
 
     .title {
       font-size: 40px;
@@ -145,6 +154,10 @@
       padding-left: 2rem;
       padding-right: 2rem;
       align-items: center;
+    }
+    @media #{$tablet} {
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
 
     .title {
@@ -243,6 +256,13 @@
       padding-top: 30px;
       row-gap: 20px;
     }
+    @media #{$tablet} {
+      padding-left: 2rem;
+      padding-right: 2rem;
+      padding-top: 30px;
+      column-gap: 40px;
+      align-items: flex-start;
+    }
 
     .contact {
       padding: 30px;
@@ -273,6 +293,9 @@
         @media #{$mobile} {
           text-align: center;
           font-size: 25px;
+        }
+        @media #{$tablet} {
+          text-align: center;
         }
       }
       .link {
@@ -354,6 +377,10 @@
       padding-left: 2rem;
       padding-right: 2rem;
     }
+    @media #{$tablet} {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
     .location {
       width: 80%;
       background: linear-gradient(
@@ -374,7 +401,13 @@
         padding: 30px;
         border-radius: 20px;
       }
-      .locationMap{
+      @media #{$tablet} {
+        width: 100%;
+        padding: 40px;
+        border-radius: 30px;
+        column-gap: 50px;
+      }
+      .locationMap {
         @media #{$mobile} {
           width: 300px;
         }

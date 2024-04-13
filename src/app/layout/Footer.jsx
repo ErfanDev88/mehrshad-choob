@@ -13,7 +13,7 @@ function Footer() {
             style={{ height: "500px", width: "100%" }}
           />
         </div>
-        <div className={styles.swatch}>
+        <div className={styles.swatch} data-aos="zoom-in">
           <div></div>
           <div></div>
           <div></div>
@@ -21,7 +21,7 @@ function Footer() {
           <div></div>
           <div></div>
         </div>
-        <div className={styles.description}>
+        <div className={styles.description} data-aos="zoom-in">
           <div className={styles.about}>
             <h1>درباره ما</h1>
             <p>طراح،سازنده و نصب انواع کابینت در تهران و کرج</p>

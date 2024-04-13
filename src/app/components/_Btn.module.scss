@@ -72,4 +72,7 @@
   @media #{$mobile} {
     display: none !important;
   }
+  @media #{$tablet} {
+    display: none !important;
+  }
 }
