@@ -3,10 +3,11 @@
 .cardContainer {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: start;
   flex-wrap: wrap;
-  gap: 50px;
+  column-gap: 140px;
+  row-gap: 50px;
 }
 .container {
   position: relative;

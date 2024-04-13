@@ -69,7 +69,7 @@ function WorkSamplesPage() {
           <div class="cardContainer">
             {workSamplesData[0][1].closet.map((d) => {
               return (
-                <div class="container" style={{ height: "350px" }} key={d.id}>
+                <div class="container" style={{ height: "350px", width: '300px' }} key={d.id}>
                   <div class="canvas">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
@@ -165,7 +165,7 @@ function WorkSamplesPage() {
           <div class="cardContainer">
             {workSamplesData[0][3].door.map((d) => {
               return (
-                <div class="container" style={{ height: "350px" }} key={d.id}>
+                <div class="container" style={{ height: "350px", width: '300px' }} key={d.id}>
                   <div class="canvas">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
@@ -213,7 +213,7 @@ function WorkSamplesPage() {
           <div class="cardContainer">
             {workSamplesData[0][4].mirror.map((d) => {
               return (
-                <div class="container" style={{ height: "350px" }} key={d.id}>
+                <div class="container" style={{ height: "350px", width: '280px' }} key={d.id}>
                   <div class="canvas" >
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
@@ -261,7 +261,7 @@ function WorkSamplesPage() {
           <div class="cardContainer">
             {workSamplesData[0][5].stair.map((d) => {
               return (
-                <div class="container" style={{ height: "350px" }} key={d.id}>
+                <div class="container" style={{ height: "350px", width: '310px' }} key={d.id}>
                   <div class="canvas">
                     <div class="tracker tr-1"></div>
                     <div class="tracker tr-2"></div>
