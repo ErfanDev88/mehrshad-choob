@@ -198,7 +198,7 @@ function Footer() {
                 </Link>
               </li>
               <li>
-                <Link className={styles.link} href={"/worksamples"}>
+                <Link className={styles.link} href={"/work-samples"}>
                   نمونه کار ها
                 </Link>
               </li>

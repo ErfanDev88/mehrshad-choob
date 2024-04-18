@@ -37,6 +37,7 @@ export default function Home() {
           textShadow={"1px 1px 3px #000"}
           border={"1px solid #fff"}
         />
+        <Link href={"/contact-us"} className={styles.heroMobileBtn}>تماس با ما</Link>
         <canvas id="stars" width="300" height="300"></canvas>
       </section>
       <section className={styles.services} id="services">
@@ -48,11 +49,7 @@ export default function Home() {
         <div class="cardContainer">
           {data[0][0].cabinetMDF.slice(0, 1).map((d) => {
             return (
-              <div
-                class="container"
-                style={{ height: "350px" }}
-                key={d.id}
-              >
+              <div class="container" style={{ height: "350px" }} key={d.id}>
                 <div class="canvas">
                   <div class="tracker tr-1"></div>
                   <div class="tracker tr-2"></div>
@@ -95,11 +92,7 @@ export default function Home() {
           })}
           {data[0][2].cabinetMemberan.slice(0, 1).map((d) => {
             return (
-              <div
-                class="container"
-                style={{ height: "350px" }}
-                key={d.id}
-              >
+              <div class="container" style={{ height: "350px" }} key={d.id}>
                 <div class="canvas">
                   <div class="tracker tr-1"></div>
                   <div class="tracker tr-2"></div>
@@ -142,11 +135,7 @@ export default function Home() {
           })}
           {data[0][3].door.slice(0, 1).map((d) => {
             return (
-              <div
-                class="container"
-                style={{ height: "350px" }}
-                key={d.id}
-              >
+              <div class="container" style={{ height: "350px" }} key={d.id}>
                 <div class="canvas">
                   <div class="tracker tr-1"></div>
                   <div class="tracker tr-2"></div>
@@ -190,7 +179,11 @@ export default function Home() {
         </div>
 
         <div className={styles.btnContainer}>
-          <Link title="نمونه کار های بییشتر" href={"/work-samples"} className={styles.btn}>
+          <Link
+            title="نمونه کار های بییشتر"
+            href={"/work-samples"}
+            className={styles.btn}
+          >
             نمونه کار های بییشتر
           </Link>
         </div>
